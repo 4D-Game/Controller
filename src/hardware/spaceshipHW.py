@@ -12,7 +12,7 @@ import time
 import atexit 
 import logging
 
-class Spaceship_DC_HW(Adafruit_MotorHAT): 
+class Spaceship_DC_HW(): 
     def __init__(self, controller, num, global_addr):
         super()__init__(controller, num)
         """

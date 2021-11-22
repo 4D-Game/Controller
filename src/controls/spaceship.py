@@ -10,7 +10,7 @@ import time
 import atexit
 import logging
 
-class Spaceship(Adafruit_MotorHAT):
+class Spaceship():
     """
     MotorHAT lib contains MotorHAT class which is the main PWM controller
     Arguments:

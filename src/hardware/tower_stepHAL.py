@@ -10,9 +10,8 @@ Hardware part
 import time
 import atexit 
 import logging
-#dont work: 
-from ...lib.Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
 
+from Adafruit_MotorHAT import Adafruit_MotorHAT, Adafruit_DCMotor, Adafruit_StepperMotor
 
 class TowerHAL():
     """
@@ -23,7 +22,7 @@ class TowerHAL():
             power1: rotate
             power2: flip
     """ 
-    def __init__(self, station=1, power=rotation, global_addr=0):
+    def __init__(self, station=0, power=rotation, global_addr=0):
         """
             I2C implementation
             Arguments:

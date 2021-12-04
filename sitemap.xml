@@ -2,37 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://4d-game.github.io/Controller/</loc>
-         <lastmod>2021-12-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://4d-game.github.io/Controller/example/ledtestgame/</loc>
-         <lastmod>2021-12-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://4d-game.github.io/Controller/sdk/</loc>
-         <lastmod>2021-12-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://4d-game.github.io/Controller/sdk/config-file/</loc>
-         <lastmod>2021-12-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://4d-game.github.io/Controller/sdk/key-maps/</loc>
-         <lastmod>2021-12-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://4d-game.github.io/Controller/sdk/code-references/game-io/</loc>
-         <lastmod>2021-12-01</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://4d-game.github.io/Controller/sdk/code-references/game/</loc>
-         <lastmod>2021-12-01</lastmod>
+         <lastmod>2021-12-04</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

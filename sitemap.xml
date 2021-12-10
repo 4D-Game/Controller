@@ -2,7 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://4d-game.github.io/Controller/</loc>
-         <lastmod>2021-12-04</lastmod>
+         <lastmod>2021-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://4d-game.github.io/Controller/known-issues/</loc>
+         <lastmod>2021-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://4d-game.github.io/Controller/setup/</loc>
+         <lastmod>2021-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://4d-game.github.io/Controller/code-references/controls/turrets/</loc>
+         <lastmod>2021-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://4d-game.github.io/Controller/code-references/hardware/hal/</loc>
+         <lastmod>2021-12-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://4d-game.github.io/Controller/code-references/hardware/servo/</loc>
+         <lastmod>2021-12-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

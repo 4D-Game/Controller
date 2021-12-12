@@ -105,6 +105,7 @@ class Display:
             width = self.disp.width  
             height = self.disp.height
 
+
         image = Image.new("RGB", (width, height))
 
         # Get drawing object to draw on image.
@@ -112,8 +113,9 @@ class Display:
 
         # Draw a black filled box to clear the image.
         draw.rectangle((0, 0, width, height), outline=0, fill=(0, 155, 250))
+        draw.ellipse((80,50,230,200), fill = (0, 155, 250), outline ='white', width=10)
+        #draw.ellipse((20, 180, 180, 20), outline ='white', fill=(0, 250, 0))
         self.disp.image(image)
-        image = Image.open("logo.png")
 
         # Scale the image to the smaller screen dimension
         image_ratio = image.width / image.height
@@ -126,11 +128,7 @@ class Display:
             scaled_height = image.height * width // image.width
         image = image.resize((scaled_width, scaled_height), Image.BICUBIC)
 
-        # Crop and center the image
-        x = scaled_width // 2 - width // 2
-        y = scaled_height // 2 - height // 2
-        image = image.crop((x, y, x + width, y + height))
-
+        
         # Display image.
         self.disp.image(image)
         

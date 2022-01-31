@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://4d-game.github.io/Controller/code-references/controls/blaster/" rel="canonical"/>
+<link href="https://4d-game.github.io/Controller/code-references/controls/leds/" rel="canonical"/>
 <link href="../../../assets/logo.png" rel="icon"/>
 <meta content="mkdocs-1.2.3, mkdocs-material-8.0.1" name="generator"/>
-<title>Blaster - Crazy Comet - Controller</title>
+<title>LEDs - Crazy Comet - Controller</title>
 <link href="../../../assets/stylesheets/main.816931ca.min.css" rel="stylesheet"/>
 <link href="../../../assets/stylesheets/palette.9204c3b2.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Blaster
+              LEDs
             
           </span>
 </div>
@@ -231,14 +231,19 @@
           Controls
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../blaster/">
+        Blaster
+      </a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-          Blaster
+          LEDs
           <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-        Blaster
+        LEDs
       </a>
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
 <label class="md-nav__title" for="__toc">
@@ -247,39 +252,44 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready">
-    controls.ready
+<a class="md-nav__link" href="#controls.leds">
+    controls.leds
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl">
-    ReadyControl
+<a class="md-nav__link" href="#controls.leds.LEDControl">
+    LEDControl
   </a>
-<nav aria-label="ReadyControl" class="md-nav">
+<nav aria-label="LEDControl" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.__init__">
+<a class="md-nav__link" href="#controls.leds.LEDControl.__init__">
     __init__()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.close">
-    close()
+<a class="md-nav__link" href="#controls.leds.LEDControl.all_leds_blue">
+    all_leds_blue()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.init">
-    init()
+<a class="md-nav__link" href="#controls.leds.LEDControl.all_leds_green">
+    all_leds_green()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.off">
-    off()
+<a class="md-nav__link" href="#controls.leds.LEDControl.display_joystick_pos">
+    display_joystick_pos()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.on">
-    on()
+<a class="md-nav__link" href="#controls.leds.LEDControl.score_leds">
+    score_leds()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#controls.leds.LEDControl.switch_off_leds">
+    switch_off_leds()
   </a>
 </li>
 </ul>
@@ -287,11 +297,6 @@
 </li>
 </ul>
 </nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../leds/">
-        LEDs
-      </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../ready/">
@@ -380,39 +385,44 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready">
-    controls.ready
+<a class="md-nav__link" href="#controls.leds">
+    controls.leds
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl">
-    ReadyControl
+<a class="md-nav__link" href="#controls.leds.LEDControl">
+    LEDControl
   </a>
-<nav aria-label="ReadyControl" class="md-nav">
+<nav aria-label="LEDControl" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.__init__">
+<a class="md-nav__link" href="#controls.leds.LEDControl.__init__">
     __init__()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.close">
-    close()
+<a class="md-nav__link" href="#controls.leds.LEDControl.all_leds_blue">
+    all_leds_blue()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.init">
-    init()
+<a class="md-nav__link" href="#controls.leds.LEDControl.all_leds_green">
+    all_leds_green()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.off">
-    off()
+<a class="md-nav__link" href="#controls.leds.LEDControl.display_joystick_pos">
+    display_joystick_pos()
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#controls.ready.ReadyControl.on">
-    on()
+<a class="md-nav__link" href="#controls.leds.LEDControl.score_leds">
+    score_leds()
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#controls.leds.LEDControl.switch_off_leds">
+    switch_off_leds()
   </a>
 </li>
 </ul>
@@ -425,48 +435,84 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<a class="md-content__button md-icon" href="https://github.com/4D-Game/Controller/edit/master/docs/code-references/controls/blaster.md" title="Edit this page">
+<a class="md-content__button md-icon" href="https://github.com/4D-Game/Controller/edit/master/docs/code-references/controls/leds.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="blaster">Blaster</h1>
 <div class="doc doc-object doc-module">
-<a id="controls.ready"></a>
+<a id="controls.leds"></a>
 <div class="doc doc-contents first">
 <div class="doc doc-children">
 <div class="doc doc-object doc-class">
-<h2 class="doc doc-heading" id="controls.ready.ReadyControl">
+<h2 class="doc doc-heading" id="controls.leds.LEDControl">
 <code>
-ReadyControl            (<span title="game_sdk.controller.inputs.switch.Switch">Switch</span>)
-        </code>
+LEDControl        </code>
 </h2>
 <div class="doc doc-contents">
-<p>Input class to display if player is ready</p>
-<p><strong>Attributes:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>led_ctl</code></td>
-<td></td>
-<td><p>Instance to control RGB LEDs</p></td>
-</tr>
-</tbody>
-</table>
+<p>Control RGB Leds</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-method">
-<h3 class="doc doc-heading" id="controls.ready.ReadyControl.__init__">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">led_ctl</span><span class="p">)</span></code>
+<h3 class="doc doc-heading" id="controls.leds.LEDControl.__init__">
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-special"><code>special</code></small>
 </span>
 </h3>
 <div class="doc doc-contents">
+<p>Initializes RGB strip and turn all leds blue</p>
+<details class="quote">
+<summary>Source code in <code>controls/leds.py</code></summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">        Initializes RGB strip and turn all leds blue</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led</span> <span class="o">=</span> <span class="n">RgbLedHAL</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led_numbers</span> <span class="o">=</span> <span class="mi">12</span>  <span class="c1"># half stripe</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">all_leds_blue</span><span class="p">()</span>
+</code></pre></div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="controls.leds.LEDControl.all_leds_blue">
+<code class="highlight language-python"><span class="n">all_leds_blue</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Turns all led blue</p>
+<details class="quote">
+<summary>Source code in <code>controls/leds.py</code></summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">all_leds_blue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">        Turns all led blue</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">configure_all_leds</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
+</code></pre></div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="controls.leds.LEDControl.all_leds_green">
+<code class="highlight language-python"><span class="n">all_leds_green</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Turns all led green</p>
+<details class="quote">
+<summary>Source code in <code>controls/leds.py</code></summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">all_leds_green</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">        Turns all led green</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">configure_all_leds</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</code></pre></div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="controls.leds.LEDControl.display_joystick_pos">
+<code class="highlight language-python"><span class="n">display_joystick_pos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Switch leds on and off depending on joystick position</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -479,184 +525,64 @@ ReadyControl            (<span title="game_sdk.controller.inputs.switch.Switch">
 </thead>
 <tbody>
 <tr>
-<td><code>seat</code></td>
-<td><code>int</code></td>
-<td><p>controller seat</p></td>
-<td><em>required</em></td>
-</tr>
-<tr>
-<td><code>name</code></td>
-<td><code>str</code></td>
-<td><p>Name of the control</p></td>
-<td><em>required</em></td>
-</tr>
-<tr>
-<td><code>led_ctl</code></td>
-<td><code>LEDControl</code></td>
-<td><p>Instance to control RGB LEDs</p></td>
-<td><em>required</em></td>
-</tr>
-</tbody>
-</table>
-<details class="quote">
-<summary>Source code in <code>controls/ready.py</code></summary>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">led_ctl</span><span class="p">:</span> <span class="n">LEDControl</span><span class="p">):</span>
-    <span class="sd">"""</span>
-<span class="sd">        Arguments:</span>
-<span class="sd">            seat: controller seat</span>
-<span class="sd">            name: Name of the control</span>
-<span class="sd">            led_ctl: Instance to control RGB LEDs</span>
-<span class="sd">    """</span>
-
-    <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">seat</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-
-    <span class="bp">self</span><span class="o">.</span><span class="n">led_ctl</span> <span class="o">=</span> <span class="n">led_ctl</span>
-
-    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> initialized"</span><span class="p">)</span>
-</code></pre></div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-method">
-<h3 class="doc doc-heading" id="controls.ready.ReadyControl.close">
-<code class="highlight language-python"><span class="n">close</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">)</span></code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-async"><code>async</code></small>
-</span>
-</h3>
-<div class="doc doc-contents">
-<p>Release LEDs and the sensor</p>
-<details class="quote">
-<summary>Source code in <code>controls/ready.py</code></summary>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">close</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-    <span class="sd">"""</span>
-<span class="sd">        Release LEDs and the sensor</span>
-<span class="sd">    """</span>
-
-    <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Close </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
-</code></pre></div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-method">
-<h3 class="doc doc-heading" id="controls.ready.ReadyControl.init">
-<code class="highlight language-python"><span class="n">init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">)</span></code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-async"><code>async</code></small>
-</span>
-</h3>
-<div class="doc doc-contents">
-<p>Turn off all LEDs</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>seat</code></td>
-<td><code>int</code></td>
-<td><p>controller seat</p></td>
-<td><em>required</em></td>
-</tr>
-</tbody>
-</table>
-<details class="quote">
-<summary>Source code in <code>controls/ready.py</code></summary>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">init</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-    <span class="sd">"""</span>
-<span class="sd">        Turn off all LEDs</span>
-
-<span class="sd">        Arguments:</span>
-<span class="sd">            seat: controller seat</span>
-<span class="sd">    """</span>
-
-    <span class="bp">self</span><span class="o">.</span><span class="n">led_ctl</span><span class="o">.</span><span class="n">switch_off_leds</span><span class="p">()</span>
-</code></pre></div>
-</details>
-</div>
-</div>
-<div class="doc doc-object doc-method">
-<h3 class="doc doc-heading" id="controls.ready.ReadyControl.off">
-<code class="highlight language-python"><span class="n">off</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_</span><span class="p">)</span></code>
-<span class="doc doc-properties">
-<small class="doc doc-property doc-property-async"><code>async</code></small>
-</span>
-</h3>
-<div class="doc doc-contents">
-<p>"
-Called when switch is released</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>seat</code></td>
+<td><code>pos</code></td>
 <td></td>
-<td><p>controller seat</p></td>
+<td><p>position of joystick, between -1 and 1</p></td>
 <td><em>required</em></td>
 </tr>
 </tbody>
 </table>
 <details class="quote">
-<summary>Source code in <code>controls/ready.py</code></summary>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">off</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">_</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
-    <span class="k">pass</span>
+<summary>Source code in <code>controls/leds.py</code></summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display_joystick_pos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">        Switch leds on and off depending on joystick position</span>
+
+<span class="sd">        Parameters:</span>
+<span class="sd">            pos: position of joystick, between -1 and 1</span>
+<span class="sd">    """</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="n">pos</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">led_numbers</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">configure_individual_leds</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">pos</span><span class="p">)</span>
 </code></pre></div>
 </details>
 </div>
 </div>
 <div class="doc doc-object doc-method">
-<h3 class="doc doc-heading" id="controls.ready.ReadyControl.on">
-<code class="highlight language-python"><span class="n">on</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">)</span></code>
+<h3 class="doc doc-heading" id="controls.leds.LEDControl.score_leds">
+<code class="highlight language-python"><span class="n">score_leds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">)</span></code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-async"><code>async</code></small>
 </span>
 </h3>
 <div class="doc doc-contents">
-<p>Turn on LEDs</p>
-<p><strong>Parameters:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Type</th>
-<th>Description</th>
-<th>Default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>seat</code></td>
-<td><code>int</code></td>
-<td><p>controller seat</p></td>
-<td><em>required</em></td>
-</tr>
-</tbody>
-</table>
+<p>Blink score leds</p>
 <details class="quote">
-<summary>Source code in <code>controls/ready.py</code></summary>
-<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">on</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<summary>Source code in <code>controls/leds.py</code></summary>
+<div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">score_leds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
     <span class="sd">"""</span>
-<span class="sd">        Turn on LEDs</span>
-
-<span class="sd">        Arguments:</span>
-<span class="sd">            seat: controller seat</span>
+<span class="sd">        Blink score leds</span>
 <span class="sd">    """</span>
 
-    <span class="bp">self</span><span class="o">.</span><span class="n">led_ctl</span><span class="o">.</span><span class="n">all_leds_green</span><span class="p">()</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">led_score_on</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+    <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="n">time</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">led_score_off</span><span class="p">()</span>
+</code></pre></div>
+</details>
+</div>
+</div>
+<div class="doc doc-object doc-method">
+<h3 class="doc doc-heading" id="controls.leds.LEDControl.switch_off_leds">
+<code class="highlight language-python"><span class="n">switch_off_leds</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
+</h3>
+<div class="doc doc-contents">
+<p>Switches all leds off</p>
+<details class="quote">
+<summary>Source code in <code>controls/leds.py</code></summary>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">switch_off_leds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">"""</span>
+<span class="sd">        Switches all leds off</span>
+<span class="sd">    """</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
 </details>
 </div>
@@ -677,7 +603,7 @@ Called when switch is released</p>
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Main" class="md-footer__link md-footer__link--prev" href="../../main/" rel="prev">
+<a aria-label="Previous: Blaster" class="md-footer__link md-footer__link--prev" href="../blaster/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -686,17 +612,17 @@ Called when switch is released</p>
 <span class="md-footer__direction">
                 Previous
               </span>
-              Main
+              Blaster
             </div>
 </div>
 </a>
-<a aria-label="Next: LEDs" class="md-footer__link md-footer__link--next" href="../leds/" rel="next">
+<a aria-label="Next: Ready" class="md-footer__link md-footer__link--next" href="../ready/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              LEDs
+              Ready
             </div>
 </div>
 <div class="md-footer__button md-icon">

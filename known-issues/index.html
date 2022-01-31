@@ -197,14 +197,19 @@
         Setup
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../config-file/">
+        Config file
+      </a>
+</li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3" id="__nav_3_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_3">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_4" id="__nav_3_1_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_4">
           Code References
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Code References" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_1_3">
+<label class="md-nav__title" for="__nav_3_1_4">
 <span class="md-nav__icon md-icon"></span>
           Code References
         </label>
@@ -215,38 +220,48 @@
       </a>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3_2" id="__nav_3_1_3_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_3_2">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_4_2" id="__nav_3_1_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_4_2">
           Controls
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Controls" class="md-nav" data-md-level="4">
-<label class="md-nav__title" for="__nav_3_1_3_2">
+<label class="md-nav__title" for="__nav_3_1_4_2">
 <span class="md-nav__icon md-icon"></span>
           Controls
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../code-references/controls/turrets/">
-        Turrets
+<a class="md-nav__link" href="../code-references/controls/blaster/">
+        Blaster
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../code-references/controls/blaster/">
-        Blaster
+<a class="md-nav__link" href="../code-references/controls/leds/">
+        LEDs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../code-references/controls/ready/">
+        Ready
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../code-references/controls/turrets/">
+        Turrets
       </a>
 </li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3_3" id="__nav_3_1_3_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_3_3">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_4_3" id="__nav_3_1_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_4_3">
           Hardware
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Hardware" class="md-nav" data-md-level="4">
-<label class="md-nav__title" for="__nav_3_1_3_3">
+<label class="md-nav__title" for="__nav_3_1_4_3">
 <span class="md-nav__icon md-icon"></span>
           Hardware
         </label>
@@ -254,6 +269,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../code-references/hardware/hal/">
         HAL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../code-references/hardware/led_hal/">
+        LED
       </a>
 </li>
 <li class="md-nav__item">
@@ -285,11 +305,6 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#pigpiod">
     pigpiod
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#spi">
-    SPI
   </a>
 </li>
 </ul>
@@ -335,11 +350,6 @@
     pigpiod
   </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#spi">
-    SPI
-  </a>
-</li>
 </ul>
 </nav>
 </div>
@@ -358,8 +368,6 @@
 Can<span class="err">'</span>t initialise pigpio library
 </code></pre></div>
 <p>This issue occurs because of problems with your hostname make sure the hostnames in <code>/etc/hostname</code> and <code>/etc/hosts</code> are the same.</p>
-<h2 id="spi">SPI</h2>
-<p>In order to use SPI it needs to be activated in <code>/boot/config.txt</code></p>
 </article>
 </div>
 </div>

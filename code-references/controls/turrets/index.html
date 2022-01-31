@@ -197,14 +197,19 @@
         Setup
       </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../config-file/">
+        Config file
+      </a>
+</li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3" id="__nav_3_1_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_3">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_4" id="__nav_3_1_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_4">
           Code References
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Code References" class="md-nav" data-md-level="3">
-<label class="md-nav__title" for="__nav_3_1_3">
+<label class="md-nav__title" for="__nav_3_1_4">
 <span class="md-nav__icon md-icon"></span>
           Code References
         </label>
@@ -215,17 +220,32 @@
       </a>
 </li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3_2" id="__nav_3_1_3_2" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_3_2">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_4_2" id="__nav_3_1_4_2" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_4_2">
           Controls
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Controls" class="md-nav" data-md-level="4">
-<label class="md-nav__title" for="__nav_3_1_3_2">
+<label class="md-nav__title" for="__nav_3_1_4_2">
 <span class="md-nav__icon md-icon"></span>
           Controls
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../blaster/">
+        Blaster
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../leds/">
+        LEDs
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../ready/">
+        Ready
+      </a>
+</li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -298,22 +318,17 @@
 </ul>
 </nav>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../blaster/">
-        Blaster
-      </a>
-</li>
 </ul>
 </nav>
 </li>
 <li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_3_3" id="__nav_3_1_3_3" type="checkbox"/>
-<label class="md-nav__link" for="__nav_3_1_3_3">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_1_4_3" id="__nav_3_1_4_3" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_1_4_3">
           Hardware
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Hardware" class="md-nav" data-md-level="4">
-<label class="md-nav__title" for="__nav_3_1_3_3">
+<label class="md-nav__title" for="__nav_3_1_4_3">
 <span class="md-nav__icon md-icon"></span>
           Hardware
         </label>
@@ -321,6 +336,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../hardware/hal/">
         HAL
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../hardware/led_hal/">
+        LED
       </a>
 </li>
 <li class="md-nav__item">
@@ -528,7 +548,7 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 <tr>
 <td><code>THRESHHOLD</code></td>
 <td><code>float</code></td>
-<td><p>threshold under wich a joystick value is recognized as 0</p></td>
+<td><p>threshold under which a joystick value is recognized as 0</p></td>
 </tr>
 <tr>
 <td><code>servo</code></td>
@@ -540,7 +560,7 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 <div class="doc doc-children">
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="controls.turrets.TurretControl.__init__">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">pin</span><span class="o">=</span><span class="mi">13</span><span class="p">,</span> <span class="n">offset</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">pin</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">rgb_cb</span><span class="o">=&lt;</span><span class="n">function</span> <span class="n">TurretControl</span><span class="o">.&lt;</span><span class="k">lambda</span><span class="o">&gt;</span> <span class="n">at</span> <span class="mh">0x75b7aa00</span><span class="o">&gt;</span><span class="p">)</span></code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-special"><code>special</code></small>
 </span>
@@ -573,19 +593,19 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 <td><code>pin</code></td>
 <td><code>int</code></td>
 <td><p>Pin the servo is connected to</p></td>
-<td><code>13</code></td>
+<td><em>required</em></td>
 </tr>
 <tr>
 <td><code>offset</code></td>
-<td><code>int</code></td>
+<td></td>
 <td><p>Servo offset from the zero position in degree</p></td>
-<td><code>0</code></td>
+<td><em>required</em></td>
 </tr>
 </tbody>
 </table>
 <details class="quote">
 <summary>Source code in <code>controls/turrets.py</code></summary>
-<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">pin</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">13</span><span class="p">,</span> <span class="n">offset</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">0</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">pin</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">config</span><span class="p">:</span> <span class="nb">dict</span><span class="p">,</span> <span class="n">rgb_cb</span><span class="p">:</span> <span class="n">Callable</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">_</span><span class="p">:</span> <span class="kc">None</span><span class="p">):</span>
     <span class="sd">"""</span>
 <span class="sd">        Arguments:</span>
 <span class="sd">            seat: controller seat</span>
@@ -595,10 +615,13 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 <span class="sd">    """</span>
 
     <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">seat</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">servo</span><span class="p">:</span> <span class="n">ServoHAL</span> <span class="o">=</span> <span class="n">ServoHAL</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span>
 
-    <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span> <span class="o">+=</span> <span class="n">offset</span>
-    <span class="bp">self</span><span class="o">.</span><span class="n">MAX_DEFLECTION</span> <span class="o">+=</span> <span class="n">offset</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">servo</span><span class="p">:</span> <span class="n">ServoHAL</span> <span class="o">=</span> <span class="n">ServoInvertedHAL</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span> <span class="k">if</span> <span class="n">config</span><span class="p">[</span><span class="s2">"inverted"</span><span class="p">]</span> <span class="k">else</span> <span class="n">ServoHAL</span><span class="p">(</span><span class="n">pin</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span> <span class="o">+=</span> <span class="n">config</span><span class="p">[</span><span class="s2">"offset"</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">MAX_DEFLECTION</span> <span class="o">+=</span> <span class="n">config</span><span class="p">[</span><span class="s2">"offset"</span><span class="p">]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">rgb_cb</span> <span class="o">=</span> <span class="n">rgb_cb</span>
 
     <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Turret </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> initialized"</span><span class="p">)</span>
 </code></pre></div>
@@ -642,7 +665,6 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 <span class="sd">        Arguments:</span>
 <span class="sd">            seat: number of the seat</span>
 <span class="sd">    """</span>
-
     <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">(</span><span class="n">seat</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">servo</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>
@@ -696,7 +718,8 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 
     <span class="nb">range</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAX_DEFLECTION</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span>
 
-    <span class="bp">self</span><span class="o">.</span><span class="n">_joystick_pos</span> <span class="o">=</span> <span class="p">((</span><span class="n">pos</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">range</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAPPING_FACTOR</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_joystick_pos</span> <span class="o">=</span> <span class="p">(((</span><span class="n">pos</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAPPING_FACTOR</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">range</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">rgb_cb</span><span class="p">(</span><span class="n">pos</span><span class="p">)</span>
 
     <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Set position of Turret </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_joystick_pos</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
@@ -745,7 +768,7 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
         <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_position_task</span><span class="o">.</span><span class="n">cancelled</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">_position_task</span><span class="o">.</span><span class="n">cancel</span><span class="p">()</span>
 
-    <span class="bp">self</span><span class="o">.</span><span class="n">_joystick_pos</span> <span class="o">=</span> <span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">MAX_DEFLECTION</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span><span class="p">)</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">MAPPING_FACTOR</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">_joystick_pos</span> <span class="o">=</span> <span class="p">((</span><span class="bp">self</span><span class="o">.</span><span class="n">MAX_DEFLECTION</span> <span class="o">-</span> <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">MIN_DEFLECTION</span><span class="p">)</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">_position_task</span> <span class="o">=</span> <span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">setPosition</span><span class="p">())</span>
     <span class="n">logging</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">"Init servo at position </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">_joystick_pos</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
 </code></pre></div>
@@ -856,12 +879,12 @@ VerticalTurretControl            (<a title="controls.turrets.TurretControl" href
 <tr>
 <td><code>MAX_DEFLECTION</code></td>
 <td><code>int</code></td>
-<td><p>20° bottom maximum</p></td>
+<td><p>30° bottom maximum</p></td>
 </tr>
 <tr>
 <td><code>MIN_DEFLECTION</code></td>
 <td><code>int</code></td>
-<td><p>-40° top maximum</p></td>
+<td><p>-20° top maximum</p></td>
 </tr>
 <tr>
 <td><code>MAPPING_FACTOR</code></td>
@@ -892,7 +915,7 @@ VerticalTurretControl            (<a title="controls.turrets.TurretControl" href
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Main" class="md-footer__link md-footer__link--prev" href="../../main/" rel="prev">
+<a aria-label="Previous: Ready" class="md-footer__link md-footer__link--prev" href="../ready/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"></path></svg>
 </div>
@@ -901,17 +924,17 @@ VerticalTurretControl            (<a title="controls.turrets.TurretControl" href
 <span class="md-footer__direction">
                 Previous
               </span>
-              Main
+              Ready
             </div>
 </div>
 </a>
-<a aria-label="Next: Blaster" class="md-footer__link md-footer__link--next" href="../blaster/" rel="next">
+<a aria-label="Next: HAL" class="md-footer__link md-footer__link--next" href="../../hardware/hal/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Blaster
+              HAL
             </div>
 </div>
 <div class="md-footer__button md-icon">

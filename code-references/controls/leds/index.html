@@ -449,7 +449,7 @@
 LEDControl        </code>
 </h2>
 <div class="doc doc-contents">
-<p>Control RGB Leds</p>
+<p>Control RGB LEDs</p>
 <div class="doc doc-children">
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="controls.leds.LEDControl.__init__">
@@ -478,12 +478,12 @@ LEDControl        </code>
 <code class="highlight language-python"><span class="n">all_leds_blue</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 </h3>
 <div class="doc doc-contents">
-<p>Turns all led blue</p>
+<p>Turns all LEDs blue</p>
 <details class="quote">
 <summary>Source code in <code>controls/leds.py</code></summary>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">all_leds_blue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">"""</span>
-<span class="sd">        Turns all led blue</span>
+<span class="sd">        Turns all LEDs blue</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">configure_all_leds</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">])</span>
 </code></pre></div>
@@ -495,12 +495,12 @@ LEDControl        </code>
 <code class="highlight language-python"><span class="n">all_leds_green</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 </h3>
 <div class="doc doc-contents">
-<p>Turns all led green</p>
+<p>Turns all LEDs green</p>
 <details class="quote">
 <summary>Source code in <code>controls/leds.py</code></summary>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">all_leds_green</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">"""</span>
-<span class="sd">        Turns all led green</span>
+<span class="sd">        Turns all LEDs green</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">configure_all_leds</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
 </code></pre></div>
@@ -512,7 +512,7 @@ LEDControl        </code>
 <code class="highlight language-python"><span class="n">display_joystick_pos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">)</span></code>
 </h3>
 <div class="doc doc-contents">
-<p>Switch leds on and off depending on joystick position</p>
+<p>Switch LEDs on and off depending on joystick position</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -536,7 +536,7 @@ LEDControl        </code>
 <summary>Source code in <code>controls/leds.py</code></summary>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">display_joystick_pos</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">pos</span><span class="p">):</span>
     <span class="sd">"""</span>
-<span class="sd">        Switch leds on and off depending on joystick position</span>
+<span class="sd">        Switch LEDs on and off depending on joystick position</span>
 
 <span class="sd">        Parameters:</span>
 <span class="sd">            pos: position of joystick, between -1 and 1</span>
@@ -555,12 +555,12 @@ LEDControl        </code>
 </span>
 </h3>
 <div class="doc doc-contents">
-<p>Blink score leds</p>
+<p>Blink score LEDs</p>
 <details class="quote">
 <summary>Source code in <code>controls/leds.py</code></summary>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">score_leds</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">time</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
     <span class="sd">"""</span>
-<span class="sd">        Blink score leds</span>
+<span class="sd">        Blink score LEDs</span>
 <span class="sd">    """</span>
 
     <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">led_score_on</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
@@ -575,12 +575,12 @@ LEDControl        </code>
 <code class="highlight language-python"><span class="n">switch_off_leds</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span></code>
 </h3>
 <div class="doc doc-contents">
-<p>Switches all leds off</p>
+<p>Switches all LEDs off</p>
 <details class="quote">
 <summary>Source code in <code>controls/leds.py</code></summary>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">switch_off_leds</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
     <span class="sd">"""</span>
-<span class="sd">        Switches all leds off</span>
+<span class="sd">        Switches all LEDs off</span>
 <span class="sd">    """</span>
     <span class="bp">self</span><span class="o">.</span><span class="n">led</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </code></pre></div>

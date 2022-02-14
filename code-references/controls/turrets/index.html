@@ -514,7 +514,7 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
         </code>
 </h2>
 <div class="doc doc-contents">
-<p>Baseclass, to control one dimension of the turret with a joystick</p>
+<p>Base class, to control one dimension of the turret with a joystick</p>
 <p><strong>Attributes:</strong></p>
 <table>
 <thead>
@@ -560,7 +560,7 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 <div class="doc doc-children">
 <div class="doc doc-object doc-method">
 <h3 class="doc doc-heading" id="controls.turrets.TurretControl.__init__">
-<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">pin</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">rgb_cb</span><span class="o">=&lt;</span><span class="n">function</span> <span class="n">TurretControl</span><span class="o">.&lt;</span><span class="k">lambda</span><span class="o">&gt;</span> <span class="n">at</span> <span class="mh">0x75bd6a00</span><span class="o">&gt;</span><span class="p">)</span></code>
+<code class="highlight language-python"><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">pin</span><span class="p">,</span> <span class="n">config</span><span class="p">,</span> <span class="n">rgb_cb</span><span class="o">=&lt;</span><span class="n">function</span> <span class="n">TurretControl</span><span class="o">.&lt;</span><span class="k">lambda</span><span class="o">&gt;</span> <span class="n">at</span> <span class="mh">0x75b9ca00</span><span class="o">&gt;</span><span class="p">)</span></code>
 <span class="doc doc-properties">
 <small class="doc doc-property doc-property-special"><code>special</code></small>
 </span>
@@ -679,7 +679,7 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 </span>
 </h3>
 <div class="doc doc-contents">
-<p>Set turretposition whenn the mouseposition changed on</p>
+<p>Set turretposition whenn the joystick position changes</p>
 <p><strong>Parameters:</strong></p>
 <table>
 <thead>
@@ -709,7 +709,7 @@ TurretControl            (<span title="game_sdk.controller.inputs.joystick.Joyst
 <summary>Source code in <code>controls/turrets.py</code></summary>
 <div class="highlight"><pre><span></span><code><span class="k">async</span> <span class="k">def</span> <span class="nf">get_direction</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">pos</span><span class="p">:</span> <span class="nb">float</span><span class="p">):</span>
     <span class="sd">"""</span>
-<span class="sd">        Set turretposition whenn the mouseposition changed on</span>
+<span class="sd">        Set turretposition whenn the joystick position changes</span>
 
 <span class="sd">        Arguments:</span>
 <span class="sd">            seat: number of the seat</span>

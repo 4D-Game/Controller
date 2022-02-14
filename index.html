@@ -389,17 +389,17 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"></path></svg>
 </a>
 <h1 id="controller">Controller</h1>
-<p>The <em>Controller</em> repository contains the code for the raspberry pi's wich control the different game figures (e.g. the turrets). In the following those Raspberry Pi's are called <strong>Controller</strong>. Each Controller can get an id by setting the <code>seat</code> variable in the config.toml.</p>
+<p>The <em>Controller</em> repository contains the code for the Raspberry Pi's which control the different game figures (e.g. the turrets). In the following those Raspberry Pi's are called <strong>Controller</strong>. Each Controller can get an id by setting the <code>seat</code> variable in the <em>config.toml</em>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The id of the controller must also be named in the <code>seats</code> variable of your <a href="https://4d-game.github.io/Gamecontrol/">Gamecontrol</a>.</p>
 </div>
 <h2 id="structure">Structure</h2>
 <p>The entry point of the game is the <code>CrazyComet</code> class in <em>src/main.py</em>. This is a subclass of <code>Game</code> from <code>game_sdk.controller</code> (See the <a href="https://4d-game.github.io/sdk">sdk documentation</a>). To start the game <code>CrazyComet.run()</code> is executed.</p>
-<p>Furthermore the <em>src</em> folder consist of a <em>hardware</em> and <em>controls</em> folder wich will be explained below.</p>
+<p>Furthermore the <em>src</em> folder consist of a <em>hardware</em> and <em>controls</em> folder, which will be explained below.</p>
 <h3 id="hardware">Hardware</h3>
 <p>This is the hardware abstraction layer. It is used to expose hardware interfaces to the rest of the programm.</p>
-<p>As defined in the <code>HAL</code> baseclass, every <code>HAL</code> class should have the following methods:</p>
+<p>As defined in the <code>HAL</code> base class, every <code>HAL</code> class should have the following methods:</p>
 <ul>
 <li><code>__init__()</code></li>
 <li><code>close()</code></li>
@@ -409,9 +409,9 @@
 <p>Every class in the hardware abstraction layer should inherit from <code>HAL</code></p>
 </div>
 <h3 id="controls">Controls</h3>
-<p>This folder contains classes wich interact directly with the game (eg. responding to gamepad inputs).</p>
+<p>This folder contains classes, which interact directly with the game (eg. responding to gamepad inputs).</p>
 <p>Classes interacting with the gamepad should always be subclasses of an <code>Input</code> class (See the <a href="https://4d-game.github.io/sdk/controller-sdk/code-references/input/">sdk documentation</a>).</p>
-<p>To register a <code>Input</code> class to the <strong>game sdk</strong> it should be instanciated in the <code>CrazyComet</code> class. There it is added to the dictionary <code>controls</code> with the desired <code>KeyCode</code> or <code>JoystickCode</code> as key.</p>
+<p>To register an <code>Input</code> class to the <strong>game sdk</strong> it should be instanciated in the <code>CrazyComet</code> class. There it is added to the dictionary <code>controls</code> with the desired <code>KeyCode</code> or <code>JoystickCode</code> as key.</p>
 <p>Example:</p>
 <div class="highlight"><pre><span></span><code><span class="bp">self</span><span class="o">.</span><span class="n">controls</span> <span class="o">=</span> <span class="p">{</span>
     <span class="n">KeyCode</span><span class="o">.</span><span class="n">BUT_0</span><span class="p">:</span> <span class="n">MyControl</span><span class="p">(</span><span class="n">seat</span><span class="p">,</span> <span class="s1">'MyControl'</span><span class="p">,</span> <span class="n">args</span><span class="o">**</span><span class="p">)</span>
